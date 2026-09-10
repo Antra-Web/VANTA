@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VANTA — Pure Darkness. Electrified Power.</title>
+  <meta name="description" content="Experience VANTA luxury electric performance vehicle defined by pure darkness, relentless speed, and acoustic sanctuary.">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Minimal Instant Preloader Screen -->
+  <div id="preloader">
+    <div class="preloader-brand">VANTA</div>
+  </div>
+
+  <!-- Sticky Canvas Viewport (Primary Visual Content) -->
+  <div class="canvas-viewport">
+    <canvas id="hero-canvas"></canvas>
+    <div class="canvas-vignette"></div>
+  </div>
+
+  <!-- Minimal Navigation Header -->
+  <header class="vanta-nav">
+    <a href="#" class="nav-brand">
+      <span class="brand-mark">VANTA</span>
+      <span class="brand-badge">EV-01</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#hero">Vision</a></li>
+      <li><a href="#engineering">Engineering</a></li>
+      <li><a href="#cockpit">Cockpit</a></li>
+    </ul>
+
+    <button class="btn-primary open-config-btn">Commission Vanta</button>
+  </header>
+
+  <!-- Horizontal HUD Metrics Bar (Unobtrusive Floating Bottom Bar) -->
+  <div class="hud-metrics-bar">
+    <div class="hud-metric-item">
+      <div class="hud-metric-val">2.9<span>SEC</span></div>
+      <div class="hud-metric-lbl">0-100 KM/H</div>
+    </div>
+    <div class="hud-metric-item">
+      <div class="hud-metric-val">680<span>HP</span></div>
+      <div class="hud-metric-lbl">DUAL MOTOR</div>
+    </div>
+    <div class="hud-metric-item">
+      <div class="hud-metric-val">620<span>KM</span></div>
+      <div class="hud-metric-lbl">RANGE</div>
+    </div>
+    <div class="hud-metric-item">
+      <div class="hud-metric-val">800<span>V</span></div>
+      <div class="hud-metric-lbl">ARCHITECTURE</div>
+    </div>
+  </div>
+
+  <!-- Scroll Container for Minimal Un-obscuring Overlays -->
+  <main id="scroll-wrapper" class="scroll-wrapper">
+
+    <!-- 1. Hero Section -->
+    <section id="hero" class="scroll-section">
+      <div class="minimal-overlay-card" data-scroll>
+        <div class="hero-tag">AERODYNAMIC ARCHITECTURE</div>
+        <h1 class="hero-title-minimal">PURE DARKNESS.<br>ELECTRIFIED POWER.</h1>
+        <p class="editorial-desc-minimal">
+          Sculpted from silence, forged in shadow. 680 horsepower and unyielding aerodynamic precision.
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. Engineering Section -->
+    <section id="engineering" class="scroll-section" style="justify-content: flex-end;">
+      <div class="minimal-overlay-card" data-scroll>
+        <div class="hero-tag">CHASSIS & DYNAMICS</div>
+        <h2 class="hero-title-minimal" style="font-size: 2.2rem;">ENGINEERED FROM SILENCE.</h2>
+        <p class="editorial-desc-minimal">
+          Carbon-Titanium Hybrid Frame with 42,000 Nm/deg torsional stiffness and active rear aerodynamic diffuser.
+        </p>
+      </div>
+    </section>
+
+    <!-- 3. Cockpit Section -->
+    <section id="cockpit" class="scroll-section">
+      <div class="minimal-overlay-card" data-scroll>
+        <div class="hero-tag">INTERIOR SANCTUARY</div>
+        <h2 class="hero-title-minimal" style="font-size: 2.2rem;">HANDCRAFTED MINIMALISM.</h2>
+        <p class="editorial-desc-minimal">
+          Curved OLED glass interface, 22-speaker spatial audio, and active noise cancellation.
+        </p>
+      </div>
+    </section>
+
+    <!-- 4. Final CTA Section -->
+    <section class="scroll-section" style="justify-content: center; align-items: center;">
+      <div class="minimal-overlay-card" style="text-align: center; max-width: 460px;" data-scroll>
+        <div class="hero-tag">EXCLUSIVE ALLOCATION</div>
+        <h2 class="hero-title-minimal" style="font-size: 2.4rem;">COMMISSION YOUR VANTA</h2>
+        <p class="editorial-desc-minimal" style="margin-bottom: 1.5rem;">
+          Limited first-edition allocations open for commission.
+        </p>
+        <button class="btn-primary open-config-btn" style="width: 100%; padding: 0.8rem;">Build Specification</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Vehicle Configurator Modal -->
+  <div id="configurator-modal" class="modal-overlay">
+    <div class="modal-content">
+      <button id="close-config-modal" class="modal-close" aria-label="Close modal">&times;</button>
+      
+      <div class="hero-tag">VANTA CONFIGURATOR</div>
+      <h2 class="hero-title-minimal" style="font-size: 2rem; margin-bottom: 0.5rem;">BESPOKE COMMISSION</h2>
+      <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem;">Select your finish and specification.</p>
+
+      <div>
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">EXTERIOR FINISH</div>
+        <div class="swatch-group">
+          <button class="swatch-btn active" style="background: #08080a;" data-label="Vanta Obsidian" data-price="0"></button>
+          <button class="swatch-btn" style="background: #8a929a;" data-label="Liquid Titanium" data-price="4500"></button>
+          <button class="swatch-btn" style="background: #00f2ff;" data-label="Plasma Cyan" data-price="6000"></button>
+          <button class="swatch-btn" style="background: #6e0d18;" data-label="Crimson Obsidian" data-price="5500"></button>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-glass); border-radius: 12px; padding: 1.5rem; margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <div style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--text-muted);">SELECTED SHADE</div>
+            <div id="config-finish-name" style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; color: var(--accent-cyan);">Vanta Obsidian</div>
+          </div>
+          <div>
+            <div style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--text-muted);">TOTAL ESTIMATED</div>
+            <div id="config-total-price" style="font-family: var(--font-heading); font-size: 1.4rem; font-weight: 800; color: #fff;">$148,000</div>
+          </div>
+          <button class="btn-primary" onclick="alert('Thank you. A concierge representative will contact you shortly.');">Reserve Slot</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div>&copy; 2026 VANTA AUTOMOTIVE INC.</div>
+    <div>AERODYNAMIC ARCHITECTURE &bull; 800V POWERTRAIN</div>
+  </footer>
+
+  <script src="js/canvas-sequence.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
